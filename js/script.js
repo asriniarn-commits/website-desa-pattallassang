@@ -259,3 +259,50 @@ document.addEventListener(
 
     }
 );
+
+// =====================================
+//        SLIDER PEMERINTAHAN DESA
+// =====================================
+
+const governmentSlider =
+    document.getElementById("governmentSlider");
+
+const governmentPrev =
+    document.getElementById("governmentPrev");
+
+const governmentNext =
+    document.getElementById("governmentNext");
+
+
+if(
+    governmentSlider &&
+    governmentPrev &&
+    governmentNext
+){
+
+    governmentPrev.addEventListener(
+        "click",
+        function(){
+
+            governmentSlider.scrollBy({
+                left:-300,
+                behavior:"smooth"
+            });
+
+        }
+    );
+
+
+    governmentNext.addEventListener(
+        "click",
+        function(){
+
+            governmentSlider.scrollBy({
+                left:300,
+                behavior:"smooth"
+            });
+
+        }
+    );
+
+}

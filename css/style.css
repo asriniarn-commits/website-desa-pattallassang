@@ -1345,3 +1345,227 @@ html{
     }
 
 }
+
+/* =====================================
+          PEMERINTAHAN DESA
+===================================== */
+
+.pemerintahan{
+    padding:100px 0;
+    background:#f7f9f5;
+}
+
+
+/* WRAPPER SLIDER */
+
+.government-wrapper{
+    position:relative;
+
+    display:flex;
+    align-items:center;
+
+    gap:20px;
+}
+
+
+/* SLIDER */
+
+.government-slider{
+    display:flex;
+
+    gap:35px;
+
+    width:100%;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scroll-snap-type:x mandatory;
+
+    scrollbar-width:none;
+
+    padding:20px 10px 30px;
+}
+
+.government-slider::-webkit-scrollbar{
+    display:none;
+}
+
+
+/* CARD */
+
+.government-card{
+    flex:0 0 calc(25% - 27px);
+
+    min-width:210px;
+
+    text-align:center;
+
+    scroll-snap-align:start;
+
+    cursor:pointer;
+
+    transition:.35s ease;
+}
+
+
+/* FOTO */
+
+.government-photo{
+    width:180px;
+    height:180px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:#e5e7eb;
+
+    border:7px solid white;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.12);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+/* GAMBAR */
+
+.government-photo img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:transform .4s ease;
+}
+
+
+/* EFEK SAAT KURSOR DIARAHKAN */
+
+.government-card:hover .government-photo{
+    transform:translateY(-12px);
+
+    box-shadow:
+        0 20px 35px rgba(0,0,0,.20);
+}
+
+.government-card:hover .government-photo img{
+    transform:scale(1.05);
+}
+
+
+/* NAMA */
+
+.government-card h3{
+    margin:0 0 7px;
+
+    font-family:var(--heading);
+
+    font-size:18px;
+
+    color:var(--dark);
+}
+
+
+/* JABATAN */
+
+.government-card p{
+    margin:0;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+
+/* TOMBOL SLIDER */
+
+.government-nav{
+    flex-shrink:0;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:var(--primary);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.12);
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+    z-index:2;
+}
+
+.government-nav:hover{
+    background:var(--primary);
+
+    color:white;
+
+    transform:scale(1.08);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:1100px){
+
+    .government-card{
+        flex:0 0 calc(33.333% - 24px);
+    }
+
+}
+
+
+@media (max-width:800px){
+
+    .government-card{
+        flex:0 0 calc(50% - 18px);
+    }
+
+}
+
+
+@media (max-width:500px){
+
+    .pemerintahan{
+        padding:80px 0;
+    }
+
+    .government-slider{
+        gap:20px;
+    }
+
+    .government-card{
+        flex:0 0 80%;
+    }
+
+    .government-photo{
+        width:160px;
+        height:160px;
+    }
+
+    .government-nav{
+        width:40px;
+        height:40px;
+    }
+
+}
