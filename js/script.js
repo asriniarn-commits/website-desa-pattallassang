@@ -306,3 +306,37 @@ if(
     );
 
 }
+
+// =====================================
+//          MOBILE NAVBAR
+// =====================================
+
+const mobileMenuBtn =
+    document.getElementById("mobileMenuBtn");
+
+const navMenu =
+    document.querySelector(".nav-menu");
+
+
+if(mobileMenuBtn && navMenu){
+
+    mobileMenuBtn.addEventListener("click", function(){
+
+        navMenu.classList.toggle("active");
+
+    });
+
+
+    // Tutup menu setelah memilih menu
+
+    navMenu.querySelectorAll("a").forEach(function(link){
+
+        link.addEventListener("click", function(){
+
+            navMenu.classList.remove("active");
+
+        });
+
+    });
+
+}
