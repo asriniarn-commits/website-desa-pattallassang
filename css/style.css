@@ -2052,3 +2052,129 @@ html{
     }
 
 }
+/* =====================================
+        POP UP TENTANG DESA
+===================================== */
+
+.about-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    z-index: 9999;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.about-modal.show {
+    display: flex;
+}
+
+.about-modal-content {
+    position: relative;
+
+    width: 90%;
+    max-width: 650px;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+
+    animation: aboutModalShow 0.25s ease;
+}
+
+.about-modal-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+
+    color: var(--primary);
+}
+
+.about-modal-content p {
+    margin: 0;
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+    font-size: 15px;
+}
+
+.about-close {
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    border: none;
+    background: none;
+
+    font-size: 32px;
+
+    color: #555;
+
+    cursor: pointer;
+
+    line-height: 1;
+}
+
+.about-close:hover {
+    color: var(--primary);
+}
+
+@keyframes aboutModalShow {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+
+/* RESPONSIVE HP */
+
+@media (max-width: 768px) {
+
+    .about-modal {
+        padding: 15px;
+    }
+
+    .about-modal-content {
+        width: 100%;
+        padding: 30px 25px;
+        border-radius: 16px;
+    }
+
+    .about-modal-content h2 {
+        font-size: 23px;
+        padding-right: 25px;
+    }
+
+    .about-modal-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .about-close {
+        top: 12px;
+        right: 15px;
+        font-size: 28px;
+    }
+
+}

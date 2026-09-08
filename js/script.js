@@ -340,3 +340,59 @@ if(mobileMenuBtn && navMenu){
     });
 
 }
+// =====================================
+//        POP UP TENTANG DESA
+// =====================================
+
+const aboutMoreBtn =
+    document.getElementById("aboutMoreBtn");
+
+const aboutModal =
+    document.getElementById("aboutModal");
+
+const aboutClose =
+    document.getElementById("aboutClose");
+
+
+if (aboutMoreBtn && aboutModal && aboutClose) {
+
+    // Buka pop up
+    aboutMoreBtn.addEventListener("click", function () {
+
+        aboutModal.classList.add("show");
+
+    });
+
+
+    // Tutup dengan tombol X
+    aboutClose.addEventListener("click", function () {
+
+        aboutModal.classList.remove("show");
+
+    });
+
+
+    // Tutup jika klik area luar pop up
+    aboutModal.addEventListener("click", function (e) {
+
+        if (e.target === aboutModal) {
+
+            aboutModal.classList.remove("show");
+
+        }
+
+    });
+
+
+    // Tutup dengan tombol ESC
+    document.addEventListener("keydown", function (e) {
+
+        if (e.key === "Escape") {
+
+            aboutModal.classList.remove("show");
+
+        }
+
+    });
+
+}
