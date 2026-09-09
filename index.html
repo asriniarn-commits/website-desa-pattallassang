@@ -37,10 +37,9 @@
                 <ul class="nav-menu">
 
                     <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Profil</a></li>
+                    <li><a href="#stats">Tentang</a></li>
                     <li><a href="#pemerintahan">Pemerintahan</a></li>
                     <li><a href="#potensi">Potensi</a></li>
-                    <li><a href="#">Berita</a></li>
                     <li><a href="#galeri">Galeri</a></li>
                     <li><a href="#kontak">Kontak</a></li>
 
@@ -122,7 +121,7 @@
         </div>
 
         <!-- Statistik -->
-        <div class="stats">
+        <div class="stats" id="stats">
 
             <h2>Statistik Desa</h2>
 
@@ -153,6 +152,136 @@
                 </div>
 
             </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+          PEMERINTAHAN DESA
+===================================== -->
+
+<section class="pemerintahan" id="pemerintahan">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Pemerintahan Desa</h2>
+            <p>
+                Struktur pemerintahan Desa Pattallassang
+                dalam menjalankan pelayanan dan pembangunan desa.
+            </p>
+        </div>
+
+
+        <div class="government-wrapper">
+
+            <!-- TOMBOL PREVIOUS -->
+
+            <button
+                type="button"
+                class="government-nav government-prev"
+                id="governmentPrev">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <!-- DAFTAR TOKOH -->
+
+            <div class="government-slider" id="governmentSlider">
+
+                <!-- KEPALA DESA -->
+
+                <div class="government-card">
+
+                    <div class="government-photo">
+
+                        <img
+                            src="assets/images/pemerintahan/kepaladesa.jpeg"
+                            alt="Kepala Desa Pattallassang">
+
+                    </div>
+
+                    <h3>Nama Kepala Desa</h3>
+
+                    <p>Kepala Desa</p>
+
+                </div>
+
+
+                <!-- KETUA PKK / IBU DESA -->
+
+                <div class="government-card">
+
+                    <div class="government-photo">
+
+                        <img
+                            src="assets/images/pemerintahan/Ketua PKK.jpeg"
+                            alt="Ketua PKK Desa Pattallassang">
+
+                    </div>
+
+                    <h3>Nama Ketua PKK</h3>
+
+                    <p>Ketua PKK / Ibu Desa</p>
+
+                </div>
+
+
+                <!-- SEKRETARIS DESA -->
+
+                <div class="government-card">
+
+                    <div class="government-photo">
+
+                        <img
+                            src="assets/images/pemerintahan/sekretaris desa.png"
+                            alt="Sekretaris Desa Pattallassang">
+
+                    </div>
+
+                    <h3>Nama Sekretaris Desa</h3>
+
+                    <p>Sekretaris Desa</p>
+
+                </div>
+
+
+                <!-- BENDAHARA DESA -->
+
+                <div class="government-card">
+
+                    <div class="government-photo">
+
+                        <img
+                            src="assets/images/pemerintahan/bendahara desa.png"
+                            alt="Bendahara Desa Pattallassang">
+
+                    </div>
+
+                    <h3>Nama Bendahara Desa</h3>
+
+                    <p>Bendahara Desa</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOMBOL NEXT -->
+
+            <button
+                type="button"
+                class="government-nav government-next"
+                id="governmentNext">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
 
         </div>
 
@@ -193,22 +322,6 @@
                 Komoditas pertanian menjadi salah satu sumber penghasilan utama masyarakat Desa Pattallassang.
             </p>
 
-            <div class="potensi-info">
-
-                <div class="info-item">
-                    <h4>🌾 1.820 Ha</h4>
-                    <span>Lahan</span>
-                </div>
-
-                <div class="info-item">
-                    <h4>👨‍🌾 420</h4>
-                    <span>Petani</span>
-                </div>
-
-            </div>
-
-            <a href="#">Selengkapnya →</a>
-
         </div>
 
     </div>
@@ -228,58 +341,7 @@
             <p>
                 Peternakan sapi dan unggas berkembang sebagai penunjang ekonomi masyarakat desa.
             </p>
-
-            <div class="potensi-info">
-
-                <div class="info-item">
-                    <h4>🐄 210</h4>
-                    <span>Ekor Sapi</span>
-                </div>
-
-                <div class="info-item">
-                    <h4>🐓 1.250</h4>
-                    <span>Unggas</span>
-                </div>
-
-            </div>
-
-            <a href="#">Selengkapnya →</a>
-
-        </div>
-
-    </div>
-
-    <!-- ================= PERKEBUNAN ================= -->
-    <div class="potensi-card">
-
-        <img src="assets/images/perkebunan.jpg" alt="Perkebunan">
-
-        <div class="potensi-content">
-
-            <h3>
-                🌴 Perkebunan
-            </h3>
-
-            <p>
-                Berbagai hasil perkebunan turut memberikan kontribusi terhadap kesejahteraan masyarakat.
-            </p>
-
-            <div class="potensi-info">
-
-                <div class="info-item">
-                    <h4>🌴 650 Ha</h4>
-                    <span>Perkebunan</span>
-                </div>
-
-                <div class="info-item">
-                    <h4>👨‍🌾 180</h4>
-                    <span>Petani</span>
-                </div>
-
-            </div>
-
-            <a href="#">Selengkapnya →</a>
-
+            
         </div>
 
     </div>
@@ -299,8 +361,7 @@
         <div class="section-title">
             <h2>Galeri Desa</h2>
             <p>
-                Dokumentasi kegiatan, kehidupan masyarakat,
-                dan berbagai potensi Desa Pattallassang.
+                Dokumentasi kegiatan Desa Pattallassang.
             </p>
         </div>
 
@@ -448,136 +509,6 @@
     </button>
 
 </div>
-
-<!-- =====================================
-          PEMERINTAHAN DESA
-===================================== -->
-
-<section class="pemerintahan" id="pemerintahan">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Pemerintahan Desa</h2>
-            <p>
-                Struktur pemerintahan Desa Pattallassang
-                dalam menjalankan pelayanan dan pembangunan desa.
-            </p>
-        </div>
-
-
-        <div class="government-wrapper">
-
-            <!-- TOMBOL PREVIOUS -->
-
-            <button
-                type="button"
-                class="government-nav government-prev"
-                id="governmentPrev">
-
-                <i class="fa-solid fa-chevron-left"></i>
-
-            </button>
-
-
-            <!-- DAFTAR TOKOH -->
-
-            <div class="government-slider" id="governmentSlider">
-
-                <!-- KEPALA DESA -->
-
-                <div class="government-card">
-
-                    <div class="government-photo">
-
-                        <img
-                            src="assets/images/pemerintahan/kepaladesa.png"
-                            alt="Kepala Desa Pattallassang">
-
-                    </div>
-
-                    <h3>Nama Kepala Desa</h3>
-
-                    <p>Kepala Desa</p>
-
-                </div>
-
-
-                <!-- KETUA PKK / IBU DESA -->
-
-                <div class="government-card">
-
-                    <div class="government-photo">
-
-                        <img
-                            src="assets/images/pemerintahan/Ketua PKK.png"
-                            alt="Ketua PKK Desa Pattallassang">
-
-                    </div>
-
-                    <h3>Nama Ketua PKK</h3>
-
-                    <p>Ketua PKK / Ibu Desa</p>
-
-                </div>
-
-
-                <!-- SEKRETARIS DESA -->
-
-                <div class="government-card">
-
-                    <div class="government-photo">
-
-                        <img
-                            src="assets/images/pemerintahan/sekretaris desa.png"
-                            alt="Sekretaris Desa Pattallassang">
-
-                    </div>
-
-                    <h3>Nama Sekretaris Desa</h3>
-
-                    <p>Sekretaris Desa</p>
-
-                </div>
-
-
-                <!-- BENDAHARA DESA -->
-
-                <div class="government-card">
-
-                    <div class="government-photo">
-
-                        <img
-                            src="assets/images/pemerintahan/bendahara desa.png"
-                            alt="Bendahara Desa Pattallassang">
-
-                    </div>
-
-                    <h3>Nama Bendahara Desa</h3>
-
-                    <p>Bendahara Desa</p>
-
-                </div>
-
-            </div>
-
-
-            <!-- TOMBOL NEXT -->
-
-            <button
-                type="button"
-                class="government-nav government-next"
-                id="governmentNext">
-
-                <i class="fa-solid fa-chevron-right"></i>
-
-            </button>
-
-        </div>
-
-    </div>
-
-</section>
 
 <!-- ===============================
         SAMBUTAN KEPALA DESA
